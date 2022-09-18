@@ -1,0 +1,19 @@
+for amdahls law, you need to know percentage of serial code blocks.
+so you need to know how much time a serial section and a parallel section take.
+
+start counting from the epoch - Jan 1st, midnight, 1970. Development of Unix OS.
+returns back to you how long its been since then.
+
+#include <sys/time.h>
+
+in function, create object
+struct timeval start;
+
+
+call function gettimeofday(&start, NULL);
+puts into the start variable, the time.
+
+{ Then do you work here }
+struct timeval end;
+pass into the gettimeofday(&end, NULL);
+
